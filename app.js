@@ -1,16 +1,18 @@
 const express = require('express');
 const chalk = require('chalk');
 const debug = require('debug')('app');
-const mogran = require('morgan');
+const morgan = require('morgan');
+require('./databaseConnection')();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(mogran('tiny'));
+app.use(morgan('tiny'));
+app.use(express.json());
 
-const accountRouter = require('./src/routes/accountRoutes')();
+const userRouter = require('./src/routes/userRoutes')();
 
-app.use('/api/accounts', accountRouter);
+app.use('/api/users', userRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello from my library app');

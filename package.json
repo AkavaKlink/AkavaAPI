@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG=app,app:* & nodemon app.js",
     "lint": "eslint app.js"
   },
@@ -19,12 +18,16 @@
   },
   "homepage": "https://github.com/AkavaKlink/AkavaAPI#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "chalk": "^2.4.1",
     "debug": "^4.0.1",
     "express": "^4.16.3",
+    "joi": "^13.6.0",
     "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
