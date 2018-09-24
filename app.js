@@ -6,9 +6,17 @@ require('./databaseConnection')();
 
 const app = express();
 const port = process.env.PORT || 3000;
+const apiKey = process.env.API_KEY;
 
 app.use(morgan('tiny'));
 app.use(express.json());
+app.use((req, res, next) => {
+  if (!req.get('ApiKey') || req.headers.apikey !== apiKey) {
+    res.sendStatus(401);
+    return;
+  }
+  next();
+});
 
 const userRouter = require('./src/routes/userRoutes')();
 

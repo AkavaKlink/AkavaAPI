@@ -8,6 +8,26 @@ const userSchema = mongoose.Schema({
     email: String,
     password: String,
   },
+  facebook: {
+    legerId: String,
+    id: String,
+    email: String,
+  },
+  linkedIn: {
+    legerId: String,
+    id: String,
+    email: String,
+  },
+  google: {
+    legerId: String,
+    id: String,
+    email: String,
+  },
+  github: {
+    legerId: String,
+    id: String,
+    email: String,
+  },
 });
 
 userSchema.methods.generateHash = function generateHash(password) {

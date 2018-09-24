@@ -27,9 +27,11 @@
     "mongoose": "^5.2.17",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.4",
+    "sequence-sdk": "^2.2.4",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@types/node": "^10.10.3",
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
@@ -42,7 +44,10 @@
     "delay": 2500,
     "env": {
       "NODE_ENV": "development",
-      "PORT": 4000
+      "PORT": 4000,
+      "API_KEY": "e2576990-c5fd-46b1-9ac3-64021a795311",
+      "SEQUENCE_LEDGER_NAME": "akava-development",
+      "SEQUENCE_API_KEY": "FQ7NNWTNEP23QMYJWVTJ4777DQID3G7E"
     }
   }
 }

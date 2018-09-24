@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\models",
     "\\src\\routes"
   ],
-  "SelectedNode": "\\app.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
