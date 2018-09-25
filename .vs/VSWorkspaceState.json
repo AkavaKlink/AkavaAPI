@@ -5,6 +5,6 @@
     "\\src\\models",
     "\\src\\routes"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\routes\\userRoutes.js",
   "PreviewInSolutionExplorer": false
 }

@@ -9,22 +9,22 @@ const userSchema = mongoose.Schema({
     password: String,
   },
   facebook: {
-    legerId: String,
+    ledgerId: String,
     id: String,
     email: String,
   },
   linkedIn: {
-    legerId: String,
+    ledgerId: String,
     id: String,
     email: String,
   },
   google: {
-    legerId: String,
+    ledgerId: String,
     id: String,
     email: String,
   },
   github: {
-    legerId: String,
+    ledgerId: String,
     id: String,
     email: String,
   },
